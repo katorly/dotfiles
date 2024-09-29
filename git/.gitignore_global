@@ -1,0 +1,52 @@
+# Windows
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+$RECYCLE.BIN/
+
+# MacOS
+.DS_Store
+.DS_Store?
+.LSOverride
+._*
+
+# Linux
+*~
+
+# Visual Studio Code
+# .vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Logs
+logs/
+*.log
+tmp/
+
+# Archives
+*.rar
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# Compiled source
+*.a
+*.app
+*.class
+*.dll
+*.exe
+*.o
+*.obj
+*.out
+*.so
+
+# Backup files
+*.bak
+*.tmp
+*.old
+*.swp
+*.swo

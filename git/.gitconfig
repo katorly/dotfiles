@@ -1,0 +1,21 @@
+[user]
+	name = Katorly
+	email = i@katorly.com
+[core]
+    editor = vim
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    autocrlf = true
+	excludesfile = ~/.gitignore_global
+[color]
+    ui = auto
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[diff]
+    tool = vimdiff
+    colorMoved = zebra
+[merge]
+    tool = vimdiff
+[push]
+    default = simple

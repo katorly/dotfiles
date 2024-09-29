@@ -1,0 +1,24 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.startupEditor": "none",
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Fira Code, Monaco, monospace",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.inlineSuggest.enabled": true,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.enablePersistentSessions": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "codesnap.transparentBackground": true,
+    "codesnap.shutterAction": "copy",
+    "codesnap.containerPadding": "1em"
+}

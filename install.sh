@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DOTFILES_DIR=$(dirname "$(realpath "$0")")  # Do not use $(pwd) because the path obtained in some CDEs is incorrect.
+DOTFILES_DIR=$(dirname "$(realpath "$0")") # Don't use $(pwd) because the path obtained in some CDEs is incorrect.
 log() {
     echo -e "${PREFIX} $1"
 }
@@ -29,41 +29,34 @@ fi
 
 
 log "💻 Configuring VS Code"
-if command -v code &> /dev/null; then
+if command -v code &> /dev/null; then # VS Code
     VSCODE_DIR="code"
-elif command -v code-server &> /dev/null; then
+    VSCODE_CONFIG_DIR="$HOME/.config/Code/User"
+elif command -v code-server &> /dev/null; then # code-server
     VSCODE_DIR="code-server"
-elif [ -x "/tmp/vscode-web/bin/code-server" ]; then
+    VSCODE_CONFIG_DIR="$HOME/.local/share/code-server/User"
+elif [ -x "/tmp/vscode-web/bin/code-server" ]; then # Coder CDE (VS Code)
     VSCODE_DIR="/tmp/vscode-web/bin/code-server"
-elif [ -x "/tmp/code-server/bin/code-server" ]; then
+    VSCODE_CONFIG_DIR="$HOME/.local/share/code-server/User"
+elif [ -x "/tmp/code-server/bin/code-server" ]; then # Coder CDE (code-server)
     VSCODE_DIR="/tmp/code-server/bin/code-server"
-elif [ -x "/ide/bin/gitpod-code" ]; then
+    VSCODE_CONFIG_DIR="$HOME/.local/share/code-server/User"
+elif [ -x "/ide/bin/gitpod-code" ]; then # Gitpod CDE
     VSCODE_DIR="/ide/bin/gitpod-code"
+    VSCODE_CONFIG_DIR="$HOME/.config/Code/User"
 fi
 if command -v code &> /dev/null || command -v code-server &> /dev/null || [ -x "/tmp/vscode-web/bin/code-server" ] || [ -x "/tmp/code-server/bin/code-server" ] || [ -x "/ide/bin/gitpod-code" ]; then
-    VSCODE_USER_DIR="$HOME/.config/Code/User"
-    mkdir -p "$VSCODE_USER_DIR"
-    ln -sf "$DOTFILES_DIR/vscode/settings.json" "$VSCODE_USER_DIR/"
+    mkdir -p "$VSCODE_CONFIG_DIR"
+    ln -sf "$DOTFILES_DIR/vscode/settings.json" "$VSCODE_CONFIG_DIR/"
+
+    # Install extensions
+    while IFS= read -r extension
+    do
+        $VSCODE_DIR --install-extension "$extension" --force
+    done < "$DOTFILES_DIR/vscode/extensions.txt"
 else
     log "VS Code or code-server is not installed."
 fi
 
-
-# Scripts after this will be executed after CDE workspace init
-wait
-
-(
-
-log "🧩 Installing VS Code extensions"
-while IFS= read -r extension
-do
-    $VSCODE_DIR --install-extension "$extension" --force
-done < "$DOTFILES_DIR/vscode/extensions.txt"
-
-) &
-
-# Give terminal control back to the user
-bg_pid=$!
-wait $bg_pid
 
 echo -e "\n\033[1m-------- ✅ dotfiles installed! --------\n\n"

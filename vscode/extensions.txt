@@ -22,4 +22,3 @@ ms-vscode-remote.remote-ssh
 jock.svg
 rangav.vscode-thunder-client
 ms-vscode.vscode-speech
-codeium.codeium

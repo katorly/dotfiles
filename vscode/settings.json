@@ -18,6 +18,10 @@
         "markdown": true,
         "scminput": false
     },
+    "codeium.enableConfig": {
+        "*": true,
+        "markdown": true
+    },
     "codesnap.transparentBackground": true,
     "codesnap.shutterAction": "copy",
     "codesnap.containerPadding": "1em"

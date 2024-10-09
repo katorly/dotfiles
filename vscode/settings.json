@@ -4,7 +4,7 @@
     "workbench.productIconTheme": "fluent-icons",
     "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
-    "editor.fontFamily": "Fira Code, Monaco, monospace",
+    "editor.fontFamily": "Fira Code, Consolas, Courier New, monospace",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.inlineSuggest.enabled": true,

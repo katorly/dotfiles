@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This is to avoid overwriting the default .bashrc
+
 HISTSIZE_SETTING="HISTSIZE=10000"
 HISTFILESIZE_SETTING="HISTFILESIZE=20000"
 HISTCONTROL_SETTING="HISTCONTROL=ignoredups:erasedups:ignorespace"

@@ -12,8 +12,6 @@ github.vscode-pull-request-github
 github.remotehub
 eamodio.gitlens
 kisstkondoros.vscode-gutter-preview
-visualstudioexptteam.vscodeintellicode
-visualstudioexptteam.intellicode-api-usage-examples
 yandeu.five-server
 yzhang.markdown-all-in-one
 pkief.material-icon-theme

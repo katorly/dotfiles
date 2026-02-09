@@ -11,17 +11,20 @@
     "terminal.integrated.enablePersistentSessions": false,
     "git.autofetch": true,
     "git.confirmSync": false,
+    "security.workspace.trust.enabled": false,
+    "files.eol": "\n",
+    "codesnap.transparentBackground": true,
+    "codesnap.shutterAction": "copy",
+    "codesnap.containerPadding": "1em",
+    "chat.viewSessions.orientation": "stacked",
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
         "markdown": true,
         "scminput": false
     },
-    "codeium.enableConfig": {
-        "*": true,
-        "markdown": true
-    },
-    "codesnap.transparentBackground": true,
-    "codesnap.shutterAction": "copy",
-    "codesnap.containerPadding": "1em"
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "claudeCode.disableLoginPrompt": true,
+    "claudeCode.selectedModel": "opus",
+    "claudeCode.initialPermissionMode": "acceptEdits"
 }

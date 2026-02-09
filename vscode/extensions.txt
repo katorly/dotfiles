@@ -5,7 +5,7 @@ adpyke.codesnap
 naumovs.color-highlight
 usernamehw.errorlens
 miguelsolorio.fluent-icons
-github.copilot
+github.copilot-chat
 github.vscode-pull-request-github
 github.remotehub
 eamodio.gitlens
@@ -18,3 +18,5 @@ ms-vscode-remote.remote-ssh
 jock.svg
 rangav.vscode-thunder-client
 ms-vscode.vscode-speech
+openai.chatgpt
+anthropic.claude-code

@@ -59,4 +59,10 @@ else
 fi
 
 
+log "🤖 Configuring Claude Code"
+mkdir -p "$HOME/.claude"
+ln -sf "$DOTFILES_DIR/claude-code/config.json" "$HOME/.claude/"
+ln -sf "$DOTFILES_DIR/claude-code/settings.json" "$HOME/.claude/"
+
+
 echo -e "\n\033[1m-------- ✅ dotfiles installed! --------\n\n"

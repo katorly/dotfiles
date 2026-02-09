@@ -31,4 +31,18 @@ if ! grep -q "^shopt -s histappend" "$BASHRC_FILE"; then
     echo "$HISTAPPEND_SETTING" >> "$BASHRC_FILE"
 fi
 
+ALIASES=(
+    "alias la='ls -a'"
+    "alias ll='ls -al'"
+    "alias dup='docker compose up -d'"
+    "alias ddown='docker compose down'"
+    "alias dpull='docker compose pull'"
+)
+
+for ALIAS in "${ALIASES[@]}"; do
+    if ! grep -qF "$ALIAS" "$BASHRC_FILE"; then
+        echo "$ALIAS" >> "$BASHRC_FILE"
+    fi
+done
+
 source "$BASHRC_FILE"

@@ -26,5 +26,193 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "claudeCode.disableLoginPrompt": true,
     "claudeCode.selectedModel": "opus",
-    "claudeCode.initialPermissionMode": "acceptEdits"
+    "claudeCode.initialPermissionMode": "acceptEdits",
+    "gcmp.commit.language": "english",
+    "gcmp.commit.format": "karma",
+    "gcmp.commit.model": {
+        "provider": "compatible",
+        "model": "gpt-4o-mini"
+    },
+    "gcmp.compatibleModels": [
+        {
+            "id": "gpt-5.2",
+            "name": "gpt-5.2",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "gpt-5.2",
+            "sdkMode": "openai",
+            "maxInputTokens": 400000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "gpt-5.3-codex",
+            "name": "gpt-5.3-codex",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "gpt-5.3-codex",
+            "sdkMode": "openai",
+            "maxInputTokens": 400000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "claude-opus-4-6",
+            "name": "claude-opus-4-6",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "claude-opus-4-6",
+            "sdkMode": "openai",
+            "maxInputTokens": 200000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "claude-opus-4-6-thinking",
+            "name": "claude-opus-4-6-thinking",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "claude-opus-4-6-thinking",
+            "sdkMode": "openai",
+            "maxInputTokens": 200000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "deepseek-v3.2",
+            "name": "deepseek-v3.2",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "deepseek-v3.2",
+            "sdkMode": "openai",
+            "maxInputTokens": 164000,
+            "maxOutputTokens": 65536,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": false
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "deepseek-v3.2-thinking",
+            "name": "deepseek-v3.2-thinking",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "deepseek-v3.2-thinking",
+            "sdkMode": "openai",
+            "maxInputTokens": 164000,
+            "maxOutputTokens": 65536,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": false
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "kimi-k2.5",
+            "name": "kimi-k2.5",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "kimi-k2.5",
+            "sdkMode": "openai",
+            "maxInputTokens": 262144,
+            "maxOutputTokens": 262144,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "qwen3.5",
+            "name": "qwen3.5",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "qwen3.5",
+            "sdkMode": "openai",
+            "maxInputTokens": 262144,
+            "maxOutputTokens": 65536,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "glm-5",
+            "name": "glm-5",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "glm-5",
+            "sdkMode": "openai",
+            "maxInputTokens": 204800,
+            "maxOutputTokens": 131072,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": false
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "minimax-m2.5",
+            "name": "minimax-m2.5",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "minimax-m2.5",
+            "sdkMode": "openai",
+            "maxInputTokens": 204800,
+            "maxOutputTokens": 131072,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": false
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "gpt-4o",
+            "name": "gpt-4o",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "gpt-4o",
+            "sdkMode": "openai",
+            "maxInputTokens": 128000,
+            "maxOutputTokens": 16384,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "gpt-4o-mini",
+            "name": "gpt-4o-mini",
+            "provider": "katorly",
+            "baseUrl": "https://ai-api.katorly.net/v1",
+            "model": "gpt-4o-mini",
+            "sdkMode": "openai",
+            "maxInputTokens": 128000,
+            "maxOutputTokens": 16384,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        }
+    ]
 }

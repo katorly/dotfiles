@@ -20,3 +20,4 @@ rangav.vscode-thunder-client
 ms-vscode.vscode-speech
 openai.chatgpt
 anthropic.claude-code
+vicanent.gcmp

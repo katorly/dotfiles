@@ -65,6 +65,21 @@
             "useInstructions": false
         },
         {
+            "id": "claude-code-opus-4-6",
+            "name": "claude-code-opus-4-6",
+            "provider": "foxcode",
+            "baseUrl": "https://code.newcli.com/claude/aws",
+            "model": "claude-opus-4-6",
+            "sdkMode": "anthropic",
+            "maxInputTokens": 200000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
             "id": "claude-opus-4-6",
             "name": "claude-opus-4-6",
             "provider": "katorly",

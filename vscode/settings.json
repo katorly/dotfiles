@@ -24,6 +24,7 @@
         "scminput": false
     },
     "github.copilot.nextEditSuggestions.enabled": true,
+    "chat.agent.maxRequests": 50,
     "claudeCode.disableLoginPrompt": true,
     "claudeCode.selectedModel": "opus",
     "claudeCode.initialPermissionMode": "acceptEdits",
@@ -50,13 +51,13 @@
             "useInstructions": false
         },
         {
-            "id": "gpt-5.3-codex",
-            "name": "gpt-5.3-codex",
+            "id": "gpt-5.4",
+            "name": "gpt-5.4",
             "provider": "katorly",
             "baseUrl": "https://ai-api.katorly.net/v1",
-            "model": "gpt-5.3-codex",
+            "model": "gpt-5.4",
             "sdkMode": "openai",
-            "maxInputTokens": 400000,
+            "maxInputTokens": 1050000,
             "maxOutputTokens": 128000,
             "capabilities": {
                 "toolCalling": true,

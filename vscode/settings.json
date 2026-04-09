@@ -32,14 +32,15 @@
     "gcmp.commit.format": "karma",
     "gcmp.commit.model": {
         "provider": "compatible",
-        "model": "gpt-4o-mini"
+        "model": "gpt-oss-120b"
     },
     "gcmp.compatibleModels": [
+
         {
             "id": "gpt-5.2",
             "name": "gpt-5.2",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
+            "baseUrl": "https://llm.katorly.net/v1",
             "model": "gpt-5.2",
             "sdkMode": "openai",
             "maxInputTokens": 400000,
@@ -54,10 +55,55 @@
             "id": "gpt-5.4",
             "name": "gpt-5.4",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
+            "baseUrl": "https://llm.katorly.net/v1",
             "model": "gpt-5.4",
             "sdkMode": "openai",
             "maxInputTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "gpt-5.4-nano",
+            "name": "gpt-5.4-nano",
+            "provider": "katorly",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "gpt-5.4-nano",
+            "sdkMode": "openai",
+            "maxInputTokens": 400000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "gpt-5.4-mini",
+            "name": "gpt-5.4-mini",
+            "provider": "katorly",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "gpt-5.4-mini",
+            "sdkMode": "openai",
+            "maxInputTokens": 400000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            },
+            "useInstructions": false
+        },
+        {
+            "id": "gpt-5.4-pro",
+            "name": "gpt-5.4-pro",
+            "provider": "katorly",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "gpt-5.4-pro",
+            "sdkMode": "openai",
+            "maxInputTokens": 400000,
             "maxOutputTokens": 128000,
             "capabilities": {
                 "toolCalling": true,
@@ -84,7 +130,7 @@
             "id": "claude-opus-4-6",
             "name": "claude-opus-4-6",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
+            "baseUrl": "https://llm.katorly.net/v1",
             "model": "claude-opus-4-6",
             "sdkMode": "openai",
             "maxInputTokens": 200000,
@@ -99,7 +145,7 @@
             "id": "claude-opus-4-6-thinking",
             "name": "claude-opus-4-6-thinking",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
+            "baseUrl": "https://llm.katorly.net/v1",
             "model": "claude-opus-4-6-thinking",
             "sdkMode": "openai",
             "maxInputTokens": 200000,
@@ -111,26 +157,26 @@
             "useInstructions": false
         },
         {
-            "id": "deepseek-v3.2",
-            "name": "deepseek-v3.2",
+            "id": "gpt-oss-120b",
+            "name": "gpt-oss-120b",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
-            "model": "deepseek-v3.2",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "gpt-oss-120b",
             "sdkMode": "openai",
-            "maxInputTokens": 164000,
-            "maxOutputTokens": 65536,
+            "maxInputTokens": 128000,
+            "maxOutputTokens": 8192,
             "capabilities": {
-                "toolCalling": true,
+                "toolCalling": false,
                 "imageInput": false
             },
             "useInstructions": false
         },
         {
-            "id": "deepseek-v3.2-thinking",
-            "name": "deepseek-v3.2-thinking",
+            "id": "deepseek-v3.2",
+            "name": "deepseek-v3.2",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
-            "model": "deepseek-v3.2-thinking",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "deepseek-v3.2",
             "sdkMode": "openai",
             "maxInputTokens": 164000,
             "maxOutputTokens": 65536,
@@ -144,7 +190,7 @@
             "id": "kimi-k2.5",
             "name": "kimi-k2.5",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
+            "baseUrl": "https://llm.katorly.net/v1",
             "model": "kimi-k2.5",
             "sdkMode": "openai",
             "maxInputTokens": 262144,
@@ -156,10 +202,10 @@
             "useInstructions": false
         },
         {
-            "id": "qwen3.5",
-            "name": "qwen3.5",
+            "id": "qwen-3.5",
+            "name": "qwen-3.5",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
+            "baseUrl": "https://llm.katorly.net/v1",
             "model": "qwen3.5",
             "sdkMode": "openai",
             "maxInputTokens": 262144,
@@ -174,7 +220,7 @@
             "id": "glm-5",
             "name": "glm-5",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
+            "baseUrl": "https://llm.katorly.net/v1",
             "model": "glm-5",
             "sdkMode": "openai",
             "maxInputTokens": 204800,
@@ -189,7 +235,7 @@
             "id": "minimax-m2.5",
             "name": "minimax-m2.5",
             "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
+            "baseUrl": "https://llm.katorly.net/v1",
             "model": "minimax-m2.5",
             "sdkMode": "openai",
             "maxInputTokens": 204800,
@@ -197,36 +243,6 @@
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": false
-            },
-            "useInstructions": false
-        },
-        {
-            "id": "gpt-4o",
-            "name": "gpt-4o",
-            "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
-            "model": "gpt-4o",
-            "sdkMode": "openai",
-            "maxInputTokens": 128000,
-            "maxOutputTokens": 16384,
-            "capabilities": {
-                "toolCalling": true,
-                "imageInput": true
-            },
-            "useInstructions": false
-        },
-        {
-            "id": "gpt-4o-mini",
-            "name": "gpt-4o-mini",
-            "provider": "katorly",
-            "baseUrl": "https://ai-api.katorly.net/v1",
-            "model": "gpt-4o-mini",
-            "sdkMode": "openai",
-            "maxInputTokens": 128000,
-            "maxOutputTokens": 16384,
-            "capabilities": {
-                "toolCalling": true,
-                "imageInput": true
             },
             "useInstructions": false
         }

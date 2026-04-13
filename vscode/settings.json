@@ -67,43 +67,13 @@
             "useInstructions": false
         },
         {
-            "id": "gpt-5.4-nano",
-            "name": "gpt-5.4-nano",
+            "id": "gpt-5.4-codex",
+            "name": "gpt-5.4-codex",
             "provider": "katorly",
             "baseUrl": "https://llm.katorly.net/v1",
-            "model": "gpt-5.4-nano",
+            "model": "gpt-5.4-codex",
             "sdkMode": "openai",
-            "maxInputTokens": 400000,
-            "maxOutputTokens": 128000,
-            "capabilities": {
-                "toolCalling": true,
-                "imageInput": true
-            },
-            "useInstructions": false
-        },
-        {
-            "id": "gpt-5.4-mini",
-            "name": "gpt-5.4-mini",
-            "provider": "katorly",
-            "baseUrl": "https://llm.katorly.net/v1",
-            "model": "gpt-5.4-mini",
-            "sdkMode": "openai",
-            "maxInputTokens": 400000,
-            "maxOutputTokens": 128000,
-            "capabilities": {
-                "toolCalling": true,
-                "imageInput": true
-            },
-            "useInstructions": false
-        },
-        {
-            "id": "gpt-5.4-pro",
-            "name": "gpt-5.4-pro",
-            "provider": "katorly",
-            "baseUrl": "https://llm.katorly.net/v1",
-            "model": "gpt-5.4-pro",
-            "sdkMode": "openai",
-            "maxInputTokens": 400000,
+            "maxInputTokens": 1050000,
             "maxOutputTokens": 128000,
             "capabilities": {
                 "toolCalling": true,
@@ -115,7 +85,7 @@
             "id": "claude-code-opus-4-6",
             "name": "claude-code-opus-4-6",
             "provider": "foxcode",
-            "baseUrl": "https://code.newcli.com/claude/aws",
+            "baseUrl": "https://code.newcli.com/claude/ultra",
             "model": "claude-opus-4-6",
             "sdkMode": "anthropic",
             "maxInputTokens": 200000,

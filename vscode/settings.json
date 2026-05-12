@@ -3,6 +3,7 @@
     "workbench.startupEditor": "none",
     "workbench.productIconTheme": "fluent-icons",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.browser.openLocalhostLinks": false,
     "files.autoSave": "afterDelay",
     "editor.fontFamily": "Fira Code, Consolas, Courier New, monospace",
     "editor.fontSize": 14,
@@ -35,7 +36,34 @@
         "model": "gpt-oss-120b"
     },
     "gcmp.compatibleModels": [
-
+        {
+            "id": "gpt-5.4-codex",
+            "name": "gpt-5.4-codex",
+            "provider": "katorly",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "gpt-5.4-codex",
+            "sdkMode": "openai",
+            "maxInputTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            }
+        },
+        {
+            "id": "gpt-5.5-codex",
+            "name": "gpt-5.5-codex",
+            "provider": "katorly",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "gpt-5.5-codex",
+            "sdkMode": "openai",
+            "maxInputTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            }
+        },
         {
             "id": "gpt-5.2",
             "name": "gpt-5.2",
@@ -48,8 +76,7 @@
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": true
-            },
-            "useInstructions": false
+            }
         },
         {
             "id": "gpt-5.4",
@@ -63,23 +90,35 @@
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": true
-            },
-            "useInstructions": false
+            }
         },
         {
-            "id": "gpt-5.4-codex",
-            "name": "gpt-5.4-codex",
+            "id": "gpt-5.5",
+            "name": "gpt-5.5",
             "provider": "katorly",
             "baseUrl": "https://llm.katorly.net/v1",
-            "model": "gpt-5.4-codex",
+            "model": "gpt-5.5",
             "sdkMode": "openai",
             "maxInputTokens": 1050000,
             "maxOutputTokens": 128000,
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": true
-            },
-            "useInstructions": false
+            }
+        },
+        {
+            "id": "claude-opus-4-7",
+            "name": "claude-opus-4-7",
+            "provider": "katorly",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "claude-opus-4-7",
+            "sdkMode": "openai",
+            "maxInputTokens": 1000000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            }
         },
         {
             "id": "claude-code-opus-4-6",
@@ -93,38 +132,7 @@
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": true
-            },
-            "useInstructions": false
-        },
-        {
-            "id": "claude-opus-4-6",
-            "name": "claude-opus-4-6",
-            "provider": "katorly",
-            "baseUrl": "https://llm.katorly.net/v1",
-            "model": "claude-opus-4-6",
-            "sdkMode": "openai",
-            "maxInputTokens": 200000,
-            "maxOutputTokens": 128000,
-            "capabilities": {
-                "toolCalling": true,
-                "imageInput": true
-            },
-            "useInstructions": false
-        },
-        {
-            "id": "claude-opus-4-6-thinking",
-            "name": "claude-opus-4-6-thinking",
-            "provider": "katorly",
-            "baseUrl": "https://llm.katorly.net/v1",
-            "model": "claude-opus-4-6-thinking",
-            "sdkMode": "openai",
-            "maxInputTokens": 200000,
-            "maxOutputTokens": 128000,
-            "capabilities": {
-                "toolCalling": true,
-                "imageInput": true
-            },
-            "useInstructions": false
+            }
         },
         {
             "id": "gpt-oss-120b",
@@ -138,38 +146,49 @@
             "capabilities": {
                 "toolCalling": false,
                 "imageInput": false
-            },
-            "useInstructions": false
+            }
         },
         {
-            "id": "deepseek-v3.2",
-            "name": "deepseek-v3.2",
+            "id": "deepseek-v4-flash",
+            "name": "deepseek-v4-flash",
             "provider": "katorly",
             "baseUrl": "https://llm.katorly.net/v1",
-            "model": "deepseek-v3.2",
+            "model": "deepseek-v4-flash",
             "sdkMode": "openai",
-            "maxInputTokens": 164000,
-            "maxOutputTokens": 65536,
+            "maxInputTokens": 1048576,
+            "maxOutputTokens": 393216,
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": false
-            },
-            "useInstructions": false
+            }
         },
         {
-            "id": "kimi-k2.5",
-            "name": "kimi-k2.5",
+            "id": "deepseek-v4-pro",
+            "name": "deepseek-v4-pro",
             "provider": "katorly",
             "baseUrl": "https://llm.katorly.net/v1",
-            "model": "kimi-k2.5",
+            "model": "deepseek-v4-pro",
+            "sdkMode": "openai",
+            "maxInputTokens": 1048576,
+            "maxOutputTokens": 393216,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": false
+            }
+        },
+        {
+            "id": "kimi-k2.6",
+            "name": "kimi-k2.6",
+            "provider": "katorly",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "kimi-k2.6",
             "sdkMode": "openai",
             "maxInputTokens": 262144,
             "maxOutputTokens": 262144,
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": true
-            },
-            "useInstructions": false
+            }
         },
         {
             "id": "qwen-3.5",
@@ -183,23 +202,21 @@
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": true
-            },
-            "useInstructions": false
+            }
         },
         {
-            "id": "glm-5",
-            "name": "glm-5",
+            "id": "glm-5.1",
+            "name": "glm-5.1",
             "provider": "katorly",
             "baseUrl": "https://llm.katorly.net/v1",
-            "model": "glm-5",
+            "model": "glm-5.1",
             "sdkMode": "openai",
-            "maxInputTokens": 204800,
+            "maxInputTokens": 131072,
             "maxOutputTokens": 131072,
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": false
-            },
-            "useInstructions": false
+            }
         },
         {
             "id": "minimax-m2.5",
@@ -213,8 +230,7 @@
             "capabilities": {
                 "toolCalling": true,
                 "imageInput": false
-            },
-            "useInstructions": false
+            }
         }
     ]
 }

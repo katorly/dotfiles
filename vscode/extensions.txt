@@ -1,3 +1,5 @@
+vicanent.gcmp
+akamud.vscode-theme-onelight
 chouzz.vscode-better-align
 aaron-bond.better-comments
 ms-ceintl.vscode-language-pack-zh-hans
@@ -13,11 +15,9 @@ kisstkondoros.vscode-gutter-preview
 yandeu.five-server
 yzhang.markdown-all-in-one
 pkief.material-icon-theme
+unifiedjs.vscode-mdx
 zhuangtongfa.material-theme
 ms-vscode-remote.remote-ssh
 jock.svg
 rangav.vscode-thunder-client
 ms-vscode.vscode-speech
-openai.chatgpt
-anthropic.claude-code
-vicanent.gcmp

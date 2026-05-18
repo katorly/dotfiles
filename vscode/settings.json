@@ -30,7 +30,7 @@
     "claudeCode.selectedModel": "opus",
     "claudeCode.initialPermissionMode": "acceptEdits",
     "gcmp.commit.language": "english",
-    "gcmp.commit.format": "karma",
+    "gcmp.commit.format": "conventional",
     "gcmp.commit.model": {
         "provider": "compatible",
         "model": "gpt-oss-120b"

@@ -33,57 +33,16 @@
     "gcmp.commit.format": "conventional",
     "gcmp.commit.model": {
         "provider": "compatible",
-        "model": "gpt-oss-120b"
+        "model": "deepseek-v4-flash"
     },
+    // To check detailed information of a model, please visit https://models.dev
     "gcmp.compatibleModels": [
-        {
-            "id": "gpt-5.4-codex",
-            "name": "gpt-5.4-codex",
-            "provider": "katorly",
-            "baseUrl": "https://llm.katorly.net/v1",
-            "model": "gpt-5.4-codex",
-            "sdkMode": "openai",
-            "maxInputTokens": 1050000,
-            "maxOutputTokens": 128000,
-            "capabilities": {
-                "toolCalling": true,
-                "imageInput": true
-            }
-        },
         {
             "id": "gpt-5.5-codex",
             "name": "gpt-5.5-codex",
             "provider": "katorly",
             "baseUrl": "https://llm.katorly.net/v1",
             "model": "gpt-5.5-codex",
-            "sdkMode": "openai",
-            "maxInputTokens": 1050000,
-            "maxOutputTokens": 128000,
-            "capabilities": {
-                "toolCalling": true,
-                "imageInput": true
-            }
-        },
-        {
-            "id": "gpt-5.2",
-            "name": "gpt-5.2",
-            "provider": "katorly",
-            "baseUrl": "https://llm.katorly.net/v1",
-            "model": "gpt-5.2",
-            "sdkMode": "openai",
-            "maxInputTokens": 400000,
-            "maxOutputTokens": 128000,
-            "capabilities": {
-                "toolCalling": true,
-                "imageInput": true
-            }
-        },
-        {
-            "id": "gpt-5.4",
-            "name": "gpt-5.4",
-            "provider": "katorly",
-            "baseUrl": "https://llm.katorly.net/v1",
-            "model": "gpt-5.4",
             "sdkMode": "openai",
             "maxInputTokens": 1050000,
             "maxOutputTokens": 128000,
@@ -107,11 +66,25 @@
             }
         },
         {
-            "id": "claude-opus-4-7",
-            "name": "claude-opus-4-7",
+            "id": "gpt-5.4",
+            "name": "gpt-5.4",
             "provider": "katorly",
             "baseUrl": "https://llm.katorly.net/v1",
-            "model": "claude-opus-4-7",
+            "model": "gpt-5.4",
+            "sdkMode": "openai",
+            "maxInputTokens": 1050000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            }
+        },
+        {
+            "id": "claude-opus-4-8",
+            "name": "claude-opus-4-8",
+            "provider": "katorly",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "claude-opus-4-8",
             "sdkMode": "openai",
             "maxInputTokens": 1000000,
             "maxOutputTokens": 128000,
@@ -121,13 +94,27 @@
             }
         },
         {
-            "id": "claude-code-opus-4-6",
-            "name": "claude-code-opus-4-6",
+            "id": "claude-code-opus-4-8",
+            "name": "claude-code-opus-4-8",
             "provider": "foxcode",
             "baseUrl": "https://code.newcli.com/claude/ultra",
-            "model": "claude-opus-4-6",
+            "model": "claude-opus-4-8",
             "sdkMode": "anthropic",
             "maxInputTokens": 200000,
+            "maxOutputTokens": 128000,
+            "capabilities": {
+                "toolCalling": true,
+                "imageInput": true
+            }
+        },
+        {
+            "id": "claude-opus-4-7",
+            "name": "claude-opus-4-7",
+            "provider": "katorly",
+            "baseUrl": "https://llm.katorly.net/v1",
+            "model": "claude-opus-4-7",
+            "sdkMode": "openai",
+            "maxInputTokens": 1000000,
             "maxOutputTokens": 128000,
             "capabilities": {
                 "toolCalling": true,

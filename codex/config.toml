@@ -1,0 +1,19 @@
+model_provider = "OpenAI"
+model = "gpt-5.5"
+review_model = "gpt-5.5"
+network_access = "enabled"
+personality = "pragmatic"
+disable_response_storage = true
+windows_wsl_setup_acknowledged = true
+
+[model_providers.OpenAI]
+name = "OpenAI"
+base_url = "https://llm.katorly.net/v1/"
+wire_api = "responses"
+requires_openai_auth = true
+
+[features]
+goals = true
+
+[windows]
+sandbox = "elevated"

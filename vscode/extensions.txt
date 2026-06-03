@@ -1,4 +1,3 @@
-vicanent.gcmp
 akamud.vscode-theme-onelight
 chouzz.vscode-better-align
 aaron-bond.better-comments

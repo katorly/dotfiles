@@ -1,0 +1,142 @@
+[
+	{
+		"name": "Katorly",
+		"vendor": "customendpoint",
+		"apiKey": "",
+		"apiType": "chat-completions",
+		"models": [
+			{
+				"id": "gpt-5.4",
+				"name": "gpt-5.4",
+				"url": "https://llm.katorly.net/v1",
+				"model": "gpt-5.4",
+				"maxInputTokens": 1050000,
+				"maxOutputTokens": 128000,
+				"toolCalling": true,
+				"vision": true
+			},
+			{
+				"id": "gpt-5.5",
+				"name": "gpt-5.5",
+				"url": "https://llm.katorly.net/v1",
+				"model": "gpt-5.5",
+				"maxInputTokens": 1050000,
+				"maxOutputTokens": 128000,
+				"toolCalling": true,
+				"vision": true
+			},
+			{
+				"id": "gpt-5.5-codex",
+				"name": "gpt-5.5-codex",
+				"url": "https://llm.katorly.net/v1",
+				"model": "gpt-5.5-codex",
+				"maxInputTokens": 1050000,
+				"maxOutputTokens": 128000,
+				"toolCalling": true,
+				"vision": true
+			},
+			{
+				"id": "claude-opus-4-7",
+				"name": "claude-opus-4-7",
+				"url": "https://llm.katorly.net/v1",
+				"model": "claude-opus-4-7",
+				"maxInputTokens": 1000000,
+				"maxOutputTokens": 128000,
+				"toolCalling": true,
+				"vision": true
+			},
+			{
+				"id": "claude-opus-4-8",
+				"name": "claude-opus-4-8",
+				"url": "https://llm.katorly.net/v1",
+				"model": "claude-opus-4-8",
+				"maxInputTokens": 1000000,
+				"maxOutputTokens": 128000,
+				"toolCalling": true,
+				"vision": true
+			},
+			{
+				"id": "claude-code-opus-4-8",
+				"name": "claude-code-opus-4-8",
+				"provider": "foxcode",
+				"url": "https://code.newcli.com/claude/ultra",
+				"model": "claude-opus-4-8",
+				"sdkMode": "anthropic",
+				"maxInputTokens": 200000,
+				"maxOutputTokens": 128000,
+				"toolCalling": true,
+				"vision": true
+			},
+			{
+				"id": "gpt-oss-120b",
+				"name": "gpt-oss-120b",
+				"url": "https://llm.katorly.net/v1",
+				"model": "gpt-oss-120b",
+				"maxInputTokens": 128000,
+				"maxOutputTokens": 8192,
+				"toolCalling": false,
+				"vision": false
+			},
+			{
+				"id": "deepseek-v4-flash",
+				"name": "deepseek-v4-flash",
+				"url": "https://llm.katorly.net/v1",
+				"model": "deepseek-v4-flash",
+				"maxInputTokens": 1048576,
+				"maxOutputTokens": 393216,
+				"toolCalling": true,
+				"vision": false
+			},
+			{
+				"id": "deepseek-v4-pro",
+				"name": "deepseek-v4-pro",
+				"url": "https://llm.katorly.net/v1",
+				"model": "deepseek-v4-pro",
+				"maxInputTokens": 1048576,
+				"maxOutputTokens": 393216,
+				"toolCalling": true,
+				"vision": false
+			},
+			{
+				"id": "kimi-k2.6",
+				"name": "kimi-k2.6",
+				"url": "https://llm.katorly.net/v1",
+				"model": "kimi-k2.6",
+				"maxInputTokens": 262144,
+				"maxOutputTokens": 262144,
+				"toolCalling": true,
+				"vision": true
+			},
+			{
+				"id": "qwen-3.5",
+				"name": "qwen-3.5",
+				"url": "https://llm.katorly.net/v1",
+				"model": "qwen3.5",
+				"maxInputTokens": 262144,
+				"maxOutputTokens": 65536,
+				"toolCalling": true,
+				"vision": true
+			},
+			{
+				"id": "glm-5.1",
+				"name": "glm-5.1",
+				"url": "https://llm.katorly.net/v1",
+				"model": "glm-5.1",
+				"maxInputTokens": 131072,
+				"maxOutputTokens": 131072,
+				"toolCalling": true,
+				"vision": false
+			},
+			{
+				"id": "minimax-m2.5",
+				"name": "minimax-m2.5",
+				"url": "https://llm.katorly.net/v1",
+				"model": "minimax-m2.5",
+				"maxInputTokens": 204800,
+				"maxOutputTokens": 131072,
+				"toolCalling": true,
+				"vision": false
+			}
+		]
+	}
+]

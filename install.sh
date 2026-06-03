@@ -59,10 +59,15 @@ else
 fi
 
 
-log "🤖 Configuring Claude Code"
+log "🤖 Configuring Codex, Claude Code"
+mkdir -p "$HOME/.codex"
+ln -sf "$DOTFILES_DIR/codex/config.toml" "$HOME/.codex/"
+ln -sf "$DOTFILES_DIR/codex/auth.json" "$HOME/.codex/"
+ln -sf "$DOTFILES_DIR/codex/AGENTS.md" "$HOME/.codex/"
 mkdir -p "$HOME/.claude"
 ln -sf "$DOTFILES_DIR/claude-code/config.json" "$HOME/.claude/"
 ln -sf "$DOTFILES_DIR/claude-code/settings.json" "$HOME/.claude/"
+ln -sf "$DOTFILES_DIR/claude-code/CLAUDE.md" "$HOME/.claude/"
 
 
 echo -e "\n\033[1m-------- ✅ dotfiles installed! --------\n\n"

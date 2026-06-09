@@ -28,5 +28,106 @@
     "chat.agent.maxRequests": 50,
     "claudeCode.disableLoginPrompt": true,
     "claudeCode.selectedModel": "opus",
-    "claudeCode.initialPermissionMode": "acceptEdits"
+    "claudeCode.initialPermissionMode": "acceptEdits",
+    "unifyChatProvider.commitMessageGeneration.format": "conventional",
+    "unifyChatProvider.commitMessageGeneration.model": {
+        "vendor": "unify-chat-provider",
+        "id": "katorly/deepseek-v4-flash"
+    },
+    "unifyChatProvider.endpoints": [
+        {
+            "type": "openai-chat-completion",
+            "name": "katorly",
+            "baseUrl": "https://llm.katorly.net",
+            "models": [
+                {
+                    "id": "gpt-5.4",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "gpt-5.5",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "gpt-5.5-codex",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "claude-opus-4-7",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "claude-opus-4-8",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "gpt-oss-120b",
+                    "capabilities": {
+                        "toolCalling": false,
+                        "imageInput": false
+                    }
+                },
+                {
+                    "id": "deepseek-v4-flash",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": false
+                    }
+                },
+                {
+                    "id": "deepseek-v4-pro",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": false
+                    }
+                },
+                {
+                    "id": "kimi-k2.6",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "qwen-3.5",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "glm-5.1",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": false
+                    }
+                },
+                {
+                    "id": "minimax-m2.5",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": false
+                    }
+                }
+            ],
+            "contextCache": {
+                "type": "allow-paid"
+            }
+        }
+    ]
 }

@@ -19,4 +19,5 @@ zhuangtongfa.material-theme
 ms-vscode-remote.remote-ssh
 jock.svg
 rangav.vscode-thunder-client
+smallmain.vscode-unify-chat-provider
 ms-vscode.vscode-speech

@@ -26,11 +26,21 @@
 				"vision": true
 			},
 			{
-				"id": "gpt-5.5-codex",
-				"name": "gpt-5.5-codex",
+				"id": "gpt-oss-120b",
+				"name": "gpt-oss-120b",
 				"url": "https://llm.katorly.net/v1",
-				"model": "gpt-5.5-codex",
-				"maxInputTokens": 1050000,
+				"model": "gpt-oss-120b",
+				"maxInputTokens": 128000,
+				"maxOutputTokens": 8192,
+				"toolCalling": false,
+				"vision": false
+			},
+			{
+				"id": "claude-opus-4-6",
+				"name": "claude-opus-4-6",
+				"url": "https://llm.katorly.net/v1",
+				"model": "claude-opus-4-6",
+				"maxInputTokens": 1000000,
 				"maxOutputTokens": 128000,
 				"toolCalling": true,
 				"vision": true
@@ -54,28 +64,6 @@
 				"maxOutputTokens": 128000,
 				"toolCalling": true,
 				"vision": true
-			},
-			{
-				"id": "claude-code-opus-4-8",
-				"name": "claude-code-opus-4-8",
-				"provider": "foxcode",
-				"url": "https://code.newcli.com/claude/ultra",
-				"model": "claude-opus-4-8",
-				"sdkMode": "anthropic",
-				"maxInputTokens": 200000,
-				"maxOutputTokens": 128000,
-				"toolCalling": true,
-				"vision": true
-			},
-			{
-				"id": "gpt-oss-120b",
-				"name": "gpt-oss-120b",
-				"url": "https://llm.katorly.net/v1",
-				"model": "gpt-oss-120b",
-				"maxInputTokens": 128000,
-				"maxOutputTokens": 8192,
-				"toolCalling": false,
-				"vision": false
 			},
 			{
 				"id": "deepseek-v4-flash",
@@ -108,16 +96,6 @@
 				"vision": true
 			},
 			{
-				"id": "qwen-3.5",
-				"name": "qwen-3.5",
-				"url": "https://llm.katorly.net/v1",
-				"model": "qwen3.5",
-				"maxInputTokens": 262144,
-				"maxOutputTokens": 65536,
-				"toolCalling": true,
-				"vision": true
-			},
-			{
 				"id": "glm-5.1",
 				"name": "glm-5.1",
 				"url": "https://llm.katorly.net/v1",
@@ -128,14 +106,24 @@
 				"vision": false
 			},
 			{
-				"id": "minimax-m2.5",
-				"name": "minimax-m2.5",
+				"id": "qwen-3.5",
+				"name": "qwen-3.5",
 				"url": "https://llm.katorly.net/v1",
-				"model": "minimax-m2.5",
-				"maxInputTokens": 204800,
-				"maxOutputTokens": 131072,
+				"model": "qwen3.5",
+				"maxInputTokens": 262144,
+				"maxOutputTokens": 65536,
 				"toolCalling": true,
-				"vision": false
+				"vision": true
+			},
+			{
+				"id": "minimax-m3",
+				"name": "minimax-m3",
+				"url": "https://llm.katorly.net/v1",
+				"model": "minimax-m3",
+				"maxInputTokens": 512000,
+				"maxOutputTokens": 128000,
+				"toolCalling": true,
+				"vision": true
 			}
 		]
 	}

@@ -29,6 +29,9 @@
     "claudeCode.disableLoginPrompt": true,
     "claudeCode.selectedModel": "opus",
     "claudeCode.initialPermissionMode": "acceptEdits",
+    "extensions.supportAgentsWindow": {
+        "SmallMain.vscode-unify-chat-provider": true
+    },
     "unifyChatProvider.commitMessageGeneration.format": "conventional",
     "unifyChatProvider.commitMessageGeneration.model": {
         "vendor": "unify-chat-provider",
@@ -55,7 +58,14 @@
                     }
                 },
                 {
-                    "id": "gpt-5.5-codex",
+                    "id": "gpt-oss-120b",
+                    "capabilities": {
+                        "toolCalling": false,
+                        "imageInput": false
+                    }
+                },
+                {
+                    "id": "claude-opus-4-6",
                     "capabilities": {
                         "toolCalling": true,
                         "imageInput": true
@@ -73,13 +83,6 @@
                     "capabilities": {
                         "toolCalling": true,
                         "imageInput": true
-                    }
-                },
-                {
-                    "id": "gpt-oss-120b",
-                    "capabilities": {
-                        "toolCalling": false,
-                        "imageInput": false
                     }
                 },
                 {
@@ -104,13 +107,6 @@
                     }
                 },
                 {
-                    "id": "qwen-3.5",
-                    "capabilities": {
-                        "toolCalling": true,
-                        "imageInput": true
-                    }
-                },
-                {
                     "id": "glm-5.1",
                     "capabilities": {
                         "toolCalling": true,
@@ -118,10 +114,17 @@
                     }
                 },
                 {
-                    "id": "minimax-m2.5",
+                    "id": "qwen-3.5",
                     "capabilities": {
                         "toolCalling": true,
-                        "imageInput": false
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "minimax-m3",
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
                     }
                 }
             ],

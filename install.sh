@@ -65,6 +65,8 @@ set_vscode() {
   if command -v code &> /dev/null || command -v code-server &> /dev/null || [ -x "/tmp/vscode-web/bin/code-server" ] || [ -x "/tmp/code-server/bin/code-server" ] || [ -x "/ide/bin/gitpod-code" ]; then
     mkdir -p "$VSCODE_CONFIG_DIR"
     ln -sf "$DOTFILES_DIR/vscode/settings.json" "$VSCODE_CONFIG_DIR/"
+    ln -sf "$DOTFILES_DIR/vscode/keybindings.json" "$VSCODE_CONFIG_DIR/"
+    ln -sf "$DOTFILES_DIR/vscode/chatLanguageModels.json" "$VSCODE_CONFIG_DIR/"
 
     # Install extensions
     while IFS= read -r extension
@@ -79,13 +81,13 @@ set_vscode() {
 set_ai() {
   log "🤖 Configuring Codex, Claude Code"
   mkdir -p "$HOME/.codex"
-  ln -sf "$DOTFILES_DIR/codex/config.toml" "$HOME/.codex/"
-  ln -sf "$DOTFILES_DIR/codex/auth.json" "$HOME/.codex/"
-  ln -sf "$DOTFILES_DIR/codex/AGENTS.md" "$HOME/.codex/"
+  ln -sf "$DOTFILES_DIR/.codex/config.toml" "$HOME/.codex/"
+  ln -sf "$DOTFILES_DIR/.codex/auth.json" "$HOME/.codex/"
+  ln -sf "$DOTFILES_DIR/.codex/AGENTS.md" "$HOME/.codex/"
   mkdir -p "$HOME/.claude"
-  ln -sf "$DOTFILES_DIR/claude-code/config.json" "$HOME/.claude/"
-  ln -sf "$DOTFILES_DIR/claude-code/settings.json" "$HOME/.claude/"
-  ln -sf "$DOTFILES_DIR/claude-code/CLAUDE.md" "$HOME/.claude/"
+  ln -sf "$DOTFILES_DIR/.claude/config.json" "$HOME/.claude/"
+  ln -sf "$DOTFILES_DIR/.claude/settings.json" "$HOME/.claude/"
+  ln -sf "$DOTFILES_DIR/.claude/CLAUDE.md" "$HOME/.claude/"
 }
 
 SET_GIT=false

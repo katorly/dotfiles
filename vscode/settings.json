@@ -37,6 +37,10 @@
         "vendor": "unify-chat-provider",
         "id": "katorly/deepseek-v4-flash"
     },
+    "chat.utilityModel": "customendpoint/gpt-5.6-sol",
+    "chat.utilitySmallModel": "customendpoint/gpt-5.6-luna",
+    "chat.exploreAgent.defaultModel": "gpt-5.6-sol (customendpoint)",
+    "github.copilot.chat.exploreAgent.model": "gpt-5.6-luna (unify-chat-provider)",
     "unifyChatProvider.endpoints": [
         {
             "type": "openai-chat-completion",
@@ -44,7 +48,7 @@
             "baseUrl": "https://llm.katorly.net",
             "models": [
                 {
-                    "id": "gpt-5.4",
+                    "id": "gpt-5.5",
                     "maxOutputTokens": 128000,
                     "maxInputTokens": 1050000,
                     "capabilities": {
@@ -53,7 +57,25 @@
                     }
                 },
                 {
-                    "id": "gpt-5.5",
+                    "id": "gpt-5.6-sol",
+                    "maxOutputTokens": 128000,
+                    "maxInputTokens": 1050000,
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "gpt-5.6-terra",
+                    "maxOutputTokens": 128000,
+                    "maxInputTokens": 1050000,
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
+                    "id": "gpt-5.6-luna",
                     "maxOutputTokens": 128000,
                     "maxInputTokens": 1050000,
                     "capabilities": {

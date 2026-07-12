@@ -10,7 +10,7 @@
 				"name": "gpt-5.5",
 				"url": "https://llm.katorly.net/v1",
 				"model": "gpt-5.5",
-				"maxInputTokens": 1050000,
+				"maxInputTokens": 258000,
 				"maxOutputTokens": 128000,
 				"toolCalling": true,
 				"vision": true
@@ -20,7 +20,7 @@
 				"name": "gpt-5.6-sol",
 				"url": "https://llm.katorly.net/v1",
 				"model": "gpt-5.6-sol",
-				"maxInputTokens": 1050000,
+				"maxInputTokens": 373000,
 				"maxOutputTokens": 128000,
 				"toolCalling": true,
 				"vision": true
@@ -30,7 +30,7 @@
 				"name": "gpt-5.6-terra",
 				"url": "https://llm.katorly.net/v1",
 				"model": "gpt-5.6-terra",
-				"maxInputTokens": 1050000,
+				"maxInputTokens": 373000,
 				"maxOutputTokens": 128000,
 				"toolCalling": true,
 				"vision": true
@@ -40,7 +40,7 @@
 				"name": "gpt-5.6-luna",
 				"url": "https://llm.katorly.net/v1",
 				"model": "gpt-5.6-luna",
-				"maxInputTokens": 1050000,
+				"maxInputTokens": 373000,
 				"maxOutputTokens": 128000,
 				"toolCalling": true,
 				"vision": true
@@ -60,7 +60,7 @@
 				"name": "claude-opus-4-6",
 				"url": "https://llm.katorly.net/v1",
 				"model": "claude-opus-4-6",
-				"maxInputTokens": 1000000,
+				"maxInputTokens": 200000,
 				"maxOutputTokens": 128000,
 				"toolCalling": true,
 				"vision": true
@@ -70,7 +70,7 @@
 				"name": "claude-opus-4-7",
 				"url": "https://llm.katorly.net/v1",
 				"model": "claude-opus-4-7",
-				"maxInputTokens": 1000000,
+				"maxInputTokens": 200000,
 				"maxOutputTokens": 128000,
 				"toolCalling": true,
 				"vision": true
@@ -80,7 +80,7 @@
 				"name": "claude-opus-4-8",
 				"url": "https://llm.katorly.net/v1",
 				"model": "claude-opus-4-8",
-				"maxInputTokens": 1000000,
+				"maxInputTokens": 200000,
 				"maxOutputTokens": 128000,
 				"toolCalling": true,
 				"vision": true
@@ -116,11 +116,11 @@
 				"vision": true
 			},
 			{
-				"id": "glm-5.1",
-				"name": "glm-5.1",
+				"id": "glm-5.2",
+				"name": "glm-5.2",
 				"url": "https://llm.katorly.net/v1",
-				"model": "glm-5.1",
-				"maxInputTokens": 131072,
+				"model": "glm-5.2",
+				"maxInputTokens": 1000000,
 				"maxOutputTokens": 131072,
 				"toolCalling": true,
 				"vision": false

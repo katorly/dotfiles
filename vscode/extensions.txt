@@ -1,4 +1,3 @@
-akamud.vscode-theme-onelight
 chouzz.vscode-better-align
 aaron-bond.better-comments
 ms-ceintl.vscode-language-pack-zh-hans
@@ -6,7 +5,7 @@ adpyke.codesnap
 naumovs.color-highlight
 usernamehw.errorlens
 miguelsolorio.fluent-icons
-github.copilot-chat
+github.vscode-github-actions
 github.vscode-pull-request-github
 github.remotehub
 eamodio.gitlens

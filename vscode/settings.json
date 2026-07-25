@@ -120,6 +120,15 @@
                     }
                 },
                 {
+                    "id": "claude-opus-5",
+                    "maxInputTokens": 200000,
+                    "maxOutputTokens": 128000,
+                    "capabilities": {
+                        "toolCalling": true,
+                        "imageInput": true
+                    }
+                },
+                {
                     "id": "deepseek-v4-flash",
                     "maxInputTokens": 1048576,
                     "maxOutputTokens": 393216,

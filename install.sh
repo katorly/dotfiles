@@ -28,6 +28,9 @@ set_git() {
   if command -v git &> /dev/null; then
     ln -sf "$DOTFILES_DIR/git/.gitconfig" ~/
     ln -sf "$DOTFILES_DIR/git/.gitignore_global" ~/
+    ln -sf "$DOTFILES_DIR/git/.gitattributes" ~/
+    mkdir -p "$HOME/.ssh"
+    ln -sf "$DOTFILES_DIR/.ssh/github_signing.pub" "$HOME/.ssh/"
   else
     log "Git is not installed."
   fi

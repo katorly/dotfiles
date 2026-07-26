@@ -1,11 +1,17 @@
+[core]
+    editor = vim
+    whitespace = fix,-indent-with-non-tab,trailing-space
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+	attributesfile = ~/.gitattributes
 [user]
 	name = Katorly
 	email = i@katorly.com
-[core]
-    editor = vim
-    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-    autocrlf = true
-	excludesfile = ~/.gitignore_global
+	signingkey = ~/.ssh/github_signing.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
 [color]
     ui = auto
 [pull]

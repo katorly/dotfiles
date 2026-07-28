@@ -69,7 +69,6 @@ set_vscode() {
     mkdir -p "$VSCODE_CONFIG_DIR"
     ln -sf "$DOTFILES_DIR/vscode/settings.json" "$VSCODE_CONFIG_DIR/"
     ln -sf "$DOTFILES_DIR/vscode/keybindings.json" "$VSCODE_CONFIG_DIR/"
-    ln -sf "$DOTFILES_DIR/vscode/chatLanguageModels.json" "$VSCODE_CONFIG_DIR/"
 
     # Install extensions
     while IFS= read -r extension

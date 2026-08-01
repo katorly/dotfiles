@@ -44,7 +44,7 @@
     "github.copilot.chat.exploreAgent.model": "gpt-5.6-luna (unify-chat-provider)",
     "unifyChatProvider.endpoints": [
         {
-            "type": "openai-chat-completion",
+            "type": "openai-responses",
             "name": "katorly",
             "baseUrl": "https://llm.katorly.net",
             "models": [

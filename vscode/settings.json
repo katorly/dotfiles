@@ -17,7 +17,10 @@
     "codesnap.transparentBackground": true,
     "codesnap.shutterAction": "copy",
     "codesnap.containerPadding": "1em",
-    "chat.viewSessions.orientation": "stacked",
+    "[mdx]": {
+        "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+    },
+    "js/ts.updateImportsOnFileMove.enabled": "always",
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
@@ -27,6 +30,7 @@
     "github.copilot.nextEditSuggestions.enabled": true,
     "chat.agent.maxRequests": 50,
     "chat.titleBar.openInAgentsWindow.enabled": false,
+    "chat.viewSessions.orientation": "stacked",
     "claudeCode.disableLoginPrompt": true,
     "claudeCode.selectedModel": "opus",
     "claudeCode.initialPermissionMode": "acceptEdits",
@@ -50,8 +54,8 @@
             "models": [
                 {
                     "id": "gpt-5.5",
-                    "maxOutputTokens": 128000,
                     "maxInputTokens": 258000,
+                    "maxOutputTokens": 128000,
                     "capabilities": {
                         "toolCalling": true,
                         "imageInput": true
@@ -59,8 +63,8 @@
                 },
                 {
                     "id": "gpt-5.6-sol",
+                    "maxInputTokens": 272000,
                     "maxOutputTokens": 128000,
-                    "maxInputTokens": 373000,
                     "capabilities": {
                         "toolCalling": true,
                         "imageInput": true
@@ -68,8 +72,8 @@
                 },
                 {
                     "id": "gpt-5.6-terra",
+                    "maxInputTokens": 272000,
                     "maxOutputTokens": 128000,
-                    "maxInputTokens": 373000,
                     "capabilities": {
                         "toolCalling": true,
                         "imageInput": true
@@ -77,8 +81,8 @@
                 },
                 {
                     "id": "gpt-5.6-luna",
+                    "maxInputTokens": 272000,
                     "maxOutputTokens": 128000,
-                    "maxInputTokens": 373000,
                     "capabilities": {
                         "toolCalling": true,
                         "imageInput": true

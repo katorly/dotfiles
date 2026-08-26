@@ -98,15 +98,6 @@
                     }
                 },
                 {
-                    "id": "claude-opus-4-6",
-                    "maxInputTokens": 200000,
-                    "maxOutputTokens": 128000,
-                    "capabilities": {
-                        "toolCalling": true,
-                        "imageInput": true
-                    }
-                },
-                {
                     "id": "claude-opus-4-7",
                     "maxInputTokens": 200000,
                     "maxOutputTokens": 128000,
@@ -149,42 +140,6 @@
                     "capabilities": {
                         "toolCalling": true,
                         "imageInput": false
-                    }
-                },
-                {
-                    "id": "kimi-k2.6",
-                    "maxInputTokens": 262144,
-                    "maxOutputTokens": 262144,
-                    "capabilities": {
-                        "toolCalling": true,
-                        "imageInput": true
-                    }
-                },
-                {
-                    "id": "glm-5.2",
-                    "maxInputTokens": 1000000,
-                    "maxOutputTokens": 131072,
-                    "capabilities": {
-                        "toolCalling": true,
-                        "imageInput": false
-                    }
-                },
-                {
-                    "id": "qwen-3.5",
-                    "maxInputTokens": 262144,
-                    "maxOutputTokens": 65536,
-                    "capabilities": {
-                        "toolCalling": true,
-                        "imageInput": true
-                    }
-                },
-                {
-                    "id": "minimax-m3",
-                    "maxInputTokens": 512000,
-                    "maxOutputTokens": 128000,
-                    "capabilities": {
-                        "toolCalling": true,
-                        "imageInput": true
                     }
                 }
             ],
